@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: azure;
+        }
+        section{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <form method="post" name="salir" id="end" style="width:0%">
+                <button type="submit" name="salir" id="salir">salir</button>
+            </form>
+            <h1>Formulario de registro</h1>
+            <form method="post" name="regresar" id="atras" style="width:0%">
+                <button type="submit" name="regresar" id="regresar">regresar</button>
+            </form>
+        </header>
+    </div>
+    <br><br>
+    <div>
+        <section>
+            <form method="post" name="formulario" id="formulario">
+                <table>
+                    <tr>
+                        <td><label for="area_de_procedencia">Area de procedencia</label></td>
+                        <td><input type="text" id="1" name="area_de_procedencia"  required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tipos_de_macros" >Tipos de macros</label></td>
+                        <td><input type="text" id="2" name="tipos_de_macros"  required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="macros">Macros</label></td>
+                        <td><input type="text" id="3" name="macros" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="proceso">Proceso</label></td>
+                        <td><input type="text" id="4" name="proceso" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="serie">Serie</label></td>
+                        <td><input type="number" id="5" name="serie" required></td>
+                        <td><label for="fecha">Fecha</label></td>
+                        <td><input type="date" id="6" name="fecha" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="folio">Folio</label></td>
+                        <td><input type="number" id="7" name="folio" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="formato">Formato</label></td>
+                        <td><input type="text" id="8" name="formato" required></td>
+                    </tr>
+                </table>
+                <br><br><br>
+                <button type="submit" name="crear" id="crear">Crear</button>
+                <button type="reset" id="cancelar" name="cancelar">Cancelar</button>
+            </form>
+        </section>
+    </div>
+</body>
+<script src="formulario.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivos</title>
+    
+    <style>
+        body{
+            text-align: center;
+            background-color: aliceblue;
+        }
+        header, section{
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <form method="post" name="salir" id="end" style="width:0%">
+                <button type="submit" name="salir" id="salir">salir</button>
+            </form>
+            <h1>Pagina de pruebas</h1><br>
+            <h2>Pagina para seleccionar archivos</h2>
+            <form method="post" name="regresar" id="atras" style="width:0%">
+                <button type="submit" name="regresar" id="regresar">regresar</button>
+            </form>
+        </header>
+    </div>
+    <div>
+        <section>
+            <h3>Seleccion de archivos</h3>
+            <p>Selecciona un archivo de tus documentos por favor</p>
+            <div>
+                <form method="post" name="form" id="form">
+                    <input type="button" onclick="archivos()" name="archivo" accept=".doc , .pdf" id="archivo" value="subir documento" required>
+                    <button type="submit" id="subir" name="subir">subir</button>
+                    <br><br>
+                    <p id="listo" ></p>
+                    <br><br>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="subir_archivos.js" ></script>
+</body>
+<script src="archivos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
