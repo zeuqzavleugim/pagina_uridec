@@ -9,3 +9,9 @@ var form2 = document.getElementById('atras');
         event.preventDefault()
         return window.location.href = 'botones.html'
     });
+
+var form3 = document.getElementById("subir");
+    form3.addEventListener('submit', function(event){
+        event.preventDefault()
+        return window.location.reload();
+    });
